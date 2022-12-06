@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body{
+  background-color: hsl(233, 47%, 7%);
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.stat-preview-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
+  width: 70%;
+  height: 56.5%;
+}
+
+.stat-preview-card-info{
+  color: white;
+  background-color: hsl(244, 38%, 16%);
+  width: 100%;
+  height: 90%;
+  display: grid;
+  grid-template-rows: 1fr, 1fr, 1fr;
+}
+
+/* heading */
+.heading{
+  font-size:4vh;
+  padding: 10% 10% 5% 10%;
+}
+.purple{
+  color: hsl(277, 64%, 61%);
+}
+
+/* card info */
+.card-info{
+  font-size: 1.1rem;
+  font-weight: 100;
+  padding: 0 10% 10% 10%;
+  color: hsla(185, 0%, 65%, 1);
+}
+
+.Stats{
+  padding: 0 10% 10% 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: hsla(185, 0%, 65%, 1);
+  letter-spacing: 1px;
+}
+
+.state-num{
+  color: white;
+  display: block;
+  font-size: 1.4rem;
+}
+.state-m{
+  margin-right: 10px
+}
+
+
+/* image */
+.image-box{
+  width: 100%;
+  height: 90%;
+  position: relative;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.shade{
+  background-color: hsla(277, 100%, 31%, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.shade-content{
+  display: none;
+}
+
+.image-box-mobile{
+  display: none;
+}
+
+@media screen and (max-width:1235px) {
+  main{
+    align-items: center;
+    height: 150vh;
+  }
+
+  .stat-preview-card{
+    grid-template-columns: 1fr;
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-auto-rows: 1fr 2fr;
+  }
+
+  .stat-preview-card-info{
+    margin-bottom: 10%;
+    text-align: center;
+  }
+
+  .Stats{
+    grid-template-columns: 1fr;
+  }
+
+  .state-m{
+    margin: 5% 0;
+  }
+
+  .image-box{
+    display: none;
+  }
+
+  .image-box-mobile{
+    display: block;
+    position: relative;
+  }
+
+  .image-mobile{
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .shade-mobile{
+    background-color: hsla(277, 100%, 31%, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
